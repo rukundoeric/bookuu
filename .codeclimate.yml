@@ -1,0 +1,44 @@
+version: "2"
+plugins:
+  eslint:
+    enabled: true
+    checks:
+      jsx-a11y/no-static-element-interactions:
+        enabled: false
+  duplication:
+    enabled: false
+    
+exclude_patterns:
+  - "__tests__"
+  - "__mocks__"
+checks:
+  argument-count:
+    config:
+      threshold: 6
+  complex-logic:
+    enabled: false
+  file-lines:
+    config:
+      threshold: 500
+  method-complexity:
+    config:
+      threshold: 250
+  method-count:
+    config:
+      threshold: 20
+  method-lines:
+    config:
+      threshold: 400
+  nested-control-flow:
+    config:
+      threshold: 6
+  return-statements:
+    config:
+      threshold: 8
+  similar-code:
+    config:
+      threshold: 150
+  identical-code:
+    config:
+      threshold: 250
+      

@@ -1,0 +1,71 @@
+@import '../css/bootstrap.min.css';
+@import '../css/animate.css';
+@import '../css/aos.css';
+@import '../css/magnific-popup.css';
+@import '../css/owl.carousel.css';
+@import '../css/slick.css';
+@import '../css/swiper.min.css';
+
+
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_keyframes.scss';
+@import './_extends';
+@import './_button';
+@import './common';
+@import './_home.scss';
+@import './_header.scss';
+@import './_banner';
+@import './books';
+@import './test';
+@import './services';
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: $heading_color2;
+}
+
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before,
+input:focus ~ .bar:after,
+textarea:focus ~ .bar:after {
+    width: 50%;
+}
+
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+    @include animation(inputHighlighter 0.3s ease);
+}
+@-webkit-keyframes inputHighlighter {
+    from {
+        background-color: $heading_color2;
+    }
+    to {
+        width: 0;
+        background-color: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background-color: $heading_color2;
+    }
+    to {
+        width: 0;
+        background-color: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background-color: $heading_color2;
+    }
+    to {
+        width: 0;
+        background-color: transparent;
+    }
+}

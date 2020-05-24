@@ -1,0 +1,117 @@
+/**************** banner part css start ****************/
+.banner_part {
+  height: 100vh;
+  position: relative;
+  background-color: $sec_color;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-image: $banner_bg;
+  background-repeat: no-repeat;
+  background-size: 41%;
+  background-position: top right;
+  @media #{$small_mobile} {
+    height: 650px;
+    background-image: none;
+    background-color: #f0eed4;
+  }
+  @media #{$large_mobile} {
+    height: 650px;
+    background-image: none;
+    background-color: #f0eed4;
+  }
+  @media #{$tab_device} {
+    height: 700px;
+    background-image: none;
+    background-color: #f0eed4;
+  }
+  @media #{$medium_device} {
+    background-size: 45% 75%;
+    height: 650px;
+  }
+
+  .banner_text {
+    display: table;
+    width: 100%;
+    height: 880px;
+    .banner_text_iner {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    @media #{$small_mobile} {
+      text-align: center;
+      padding-top: 0px;
+      height: 650px;
+    }
+    @media #{$large_mobile} {
+      text-align: center;
+      padding-top: 0px;
+      height: 650px;
+    }
+    @media #{$tab_device} {
+      text-align: center;
+      padding-top: 0px;
+      height: 700px;
+    }
+    @media #{$medium_device} {
+      height: 650px;
+    }
+    h5 {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: $font_stack_2;
+      font-weight: 800;
+      color: $font_6;
+    }
+    h1 {
+      font-size: 55px;
+      line-height: 1;
+      text-transform: capitalize;
+      color: $black_color;
+      font-family: $font_stack_3;
+      font-weight: 800;
+      margin-bottom: 25px;
+      color: rgb(34, 34, 34);
+      line-height: 1.273;
+
+      @media #{$small_mobile} {
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+      }
+      @media #{$large_mobile} {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+      }
+      @media #{$tab_device} {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+      }
+      @media #{$medium_device} {
+        font-size: 40px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      span {
+        color: $btn_bg;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.929;
+      font-family: $font_stack_1;
+      color: #646464;
+    }
+    .btn_1 {
+      @extend %custom_btn_bg_1;
+      box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+      margin-top: 45px;
+    }
+  }
+
+}
+
+/**************** hero part css end ****************/

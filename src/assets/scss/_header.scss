@@ -1,0 +1,189 @@
+/**************menu part start*****************/
+.main_menu {
+  position: absolute;
+	left: 0;
+	top: 0;
+  width: 100%;
+  padding: 7px 0 7px 0;
+	z-index: 999;
+  .navbar-brand-mobile {
+    @media #{$extra_big_screen} {
+      display: none;
+    }
+    @media #{$big_screen} {
+      display: none;
+    }
+    @media #{$medium_device} {
+      display: none;
+    }
+  }
+  .navbar-brand {
+    @media #{$sm_mobile} {
+      display: none;
+    }
+    @media #{$xs_mobile} {
+      display: none;
+    }
+    @media #{$tab_device} {
+      display: none;
+    }
+    @media #{$large_mobile} {
+      display: none;
+    }
+  }
+
+  .navbar {
+    padding: 7px 0px;
+  }
+  .logob {
+    width: 25px;
+    height: 25px;
+  }
+  .logo {
+    width: 150px;
+    height: 40px;
+  }
+}
+.menu-f {
+  border-radius: 20px;
+  border: 0px solid transparent !important;
+  @media #{$xs_mobile} {
+    height: 50px;
+  }
+  @media #{$sm_mobile} {
+    height: 50px;
+  }
+  @media #{$large_mobile} {
+    height: 50px;
+  }
+  @media #{$tab_device} {
+    height: 50px;
+  }
+}
+.menu-f-mobile {
+  @media #{$extra_big_screen} {
+    display: none;
+  }
+  @media #{$big_screen} {
+    display: none;
+  }
+  @media #{$medium_device} {
+    display: none;
+  }
+}
+.main_menu_onscroll {
+  background-color: white;
+  box-shadow: 0 4px 20px 0px rgba(105, 105, 105, 0.14);
+}
+
+.navbar-collapse {
+  @media #{$extra_big_screen} {
+    left: 0;
+    justify-content: end;
+    text-align: center !important;
+  }
+}
+.search_widget {
+  background-color: transparent;
+  .form-control {
+    background-color: white;
+    border-color: #f0e9ff;
+    height: 45px;
+    font-size: 15px;
+    color: #999999;
+    border-radius: 20px;
+
+    &::placeholder {
+      color: #999999;
+    }
+
+    &:focus {
+      border-color: #f0e9ff;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .input-group {
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px $font_5;
+    @media #{$medium_device} {
+      border: 1px solid $font_5;
+    }
+    @media #{$big_screen} {
+      border: 1px solid $font_5;
+    }
+    @media #{$extra_big_screen} {
+      border: 0px solid $font_5;
+    }
+
+    @media #{$xs_mobile} {
+      padding: 2px;
+    }
+    @media #{$sm_mobile} {
+      padding: 2px;
+    }
+    @media #{$large_mobile} {
+      padding: 2px;
+    }
+    @media #{$tab_device} {
+      padding: 2px;
+    }
+    input {
+      background-color: transparent;
+      border: 0px solid transparent !important;
+      // @media #{$extra_big_screen}{
+      //   height: 40px;
+      // }
+      // height: 40px;
+    }
+    button {
+      background: transparent;
+      i,
+      span {
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+    .menu-btn {
+      @media #{$extra_big_screen} {
+        display: none;
+      }
+      @media #{$big_screen} {
+        display: none;
+      }
+      @media #{$medium_device} {
+        display: none;
+      }
+    }
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.menu_fixed {
+  position: fixed;
+  z-index: 9999 !important;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 6px 6px rgba(63, 63, 63, 0.05);
+  top: 0;
+}
